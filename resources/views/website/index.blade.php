@@ -99,15 +99,16 @@
    <script>  
       $(document).ready(function() {
          // Listen for the input event on the email input field
-         $('#email').on('input', function() {
+         $('#FormControlInput5').on('input', function() {
                // Clear the text of the email error message
-               $('#email_error').text('');
-         });
-         $('#name').on('input', function() {
-               // Clear the text of the name error message
                $('#name_error').text('');
          });
-         $('#reff_code').on('input', function() {
+         $('#FormControlInput4').on('input', function() {
+               // Clear the text of the name error message
+               $('#email_error').text('');
+
+         });
+         $('#FormControlInput6').on('input', function() {
                // Clear the text of the reff_code error message
                $('#reff_code_error').text('');
          });

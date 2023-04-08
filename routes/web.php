@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin-manage', 'namespace' => 'Admin','as'=>'admin.',
 
 });
 /* frontend Routes */
-Route::get('/', ['uses' => 'Frontend\HomeController@index']);
+Route::get('/', ['uses' => 'Frontend\HomeController@index'])->name('index');
 Route::post('register', ['uses' => 'Frontend\HomeController@register'])->name('user.register');
 Route::get('success', ['uses' => 'Frontend\HomeController@registrationSuccess'])->name('registration.success');
 Route::middleware(['auth'])->group(function () {
